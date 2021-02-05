@@ -1,0 +1,42 @@
+.formulario {
+    font-family: Ginebra;
+    border: 2px solid #3c3c3c;
+    text-align: center;
+}
+
+.formulario table,
+th,
+td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.formulario .center {
+    border-collapse: collapse;
+    width: 60%;
+    max-width: 60%;
+    margin: 0px 0px 15px 15px;
+    border-spacing: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.formulario th {
+    background-color: gray;
+    font-size: 18px;
+    font-weight: bold;
+    color: White;
+}
+
+.formulario tr:hover {
+    font-size: px;
+    font-weight: bold;
+}
+
+.formulario tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+
+.formulario .image {
+    box-shadow: 5px 5px 5px #ccc;
+}
