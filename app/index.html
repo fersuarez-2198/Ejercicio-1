@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title></title>
+    <title>Parcial web</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="../app/styles.css" rel="stylesheet">
@@ -10,53 +10,35 @@
 
 <body>
     <div class="formulario">
-        <h1>Ejercicio 1: HTML</h1>
-        <h2>Fabián Rodríguez Suárez</h2>
-        <table class="center">
-            <tr>
-                <th>Character</th>
-                <th>Rol</th>
-                <th>Image</th>
-            </tr>
-            <tr>
-                <td>Batman</td>
-                <td>Superhero</td>
-                <td><img class="image" src="../resource/Batman.jpg" alt="Batman"></td>
-            </tr>
-            <tr>
-                <td>Batman who laughs</td>
-                <td>Villain</td>
-                <td><img class="image" src="../resource/BatLaugh.jpg" alt="Batman"></td>
-            </tr>
-            <tr>
-                <td>Catwoman</td>
-                <td>Villain-Ally</td>
 
-                <td><img class="image" src="../resource/Catwoman.jpg" alt="Batman"></td>
+        <div class="navBar">
+            <ul>
+                <li><a (click)="home()" href="#home">Home</a></li>
+                <li><a (click)="services()" href="#news">Services</a></li>
+                <li><a (click)="about()" href="#about">About</a></li>
+                <li><a (click)="contact()" href="#contact">Contact</a></li>
+                <li><a (click)="FAQ()" href="#faq">FAQ</a></li>
 
-            </tr>
-            <tr>
-                <td>Joker</td>
-                <td>Villain</td>
+                <form class="example" action="action_page.php">
+                    <input type="text" placeholder="Search" name="search">
+                    <button type="input" class="primary-button sign">SIGN UP</button>
+                </form>
 
-                <td><img class="image" src="../resource/Joker.jpg" alt="Batman"></td>
-
-            </tr>
-            <tr>
-                <td>Nightwing</td>
-                <td>Hero</td>
-
-                <td><img class="image" src="../resource/Nightwing.jpg" alt="Batman"></td>
-
-            </tr>
-            <tr>
-                <td>Riddler</td>
-                <td>Villain</td>
-
-                <td><img class="image" src="../resource/Riddler.jpg" alt="Batman"></td>
-
-            </tr>
-        </table>
+            </ul>
+        </div>
+        <div class="redesSociales">
+            <a href="http://www.facebook.com">FB</a>
+            <br>
+            <a href="http://www.twitter.com">TW</a>
+        </div>
+        <div class="info-text" *ngIf="isHome">
+            <h2>TRAVEL</h2>
+            <h1>The World</h1>
+            <h3>Landing Page</h3>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                aliquip ex ea </p>
+            <button type="input" class="secondary-button">LEARN MORE</button>
+        </div>
     </div>
 </body>
 
